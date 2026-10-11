@@ -1,0 +1,13 @@
+name: astrbot_plugin_flux_acedatacloud
+display_name: Flux by Ace Data Cloud
+short_desc: Generate or edit one Flux image and retrieve the final result in chat.
+desc: Submit one Flux image job through your Ace Data Cloud account, then query the same task ID for final image URLs.
+version: 0.1.0
+author: acedatacloud
+repo: https://github.com/AceDataCloud/FluxAstrBot
+astrbot_version: ">=4.28.2,<5"
+tags:
+  - Flux
+  - AI image
+  - image editing
+  - Ace Data Cloud
