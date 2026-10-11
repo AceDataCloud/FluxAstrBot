@@ -1,0 +1,30 @@
+{
+  "environment": {
+    "astrbot_version": "4.28.2",
+    "installation": "isolated editable local plugin installation",
+    "chat_model": "gpt-4.1-mini through the generic OpenAI-compatible source",
+    "marketplace_installation": "not tested; AstrBot Cloud listing pending"
+  },
+  "primary_case": {
+    "model": "flux-dev",
+    "size_requested": "1024x1024",
+    "generation_tool": "flux_generate_image",
+    "generation_tool_calls": 1,
+    "lookup_tool": "flux_get_task",
+    "lookup_tool_calls_in_chat": 1,
+    "task_id": "60adc4c3-4083-4f4a-8d87-78d1495fc9a4",
+    "trace_id": "7b2f6ce7-8979-4747-b6e2-91fa235b1791",
+    "terminal_status": "succeeded",
+    "image_count": 1,
+    "image_url": "https://platform2.cdn.acedata.cloud/flux/60adc4c3-4083-4f4a-8d87-78d1495fc9a4.png",
+    "media_http_status": 200,
+    "media_content_type": "image/png",
+    "image_width": 1024,
+    "image_height": 1024,
+    "usage_api_path": "/flux/images",
+    "usage_status_code": 200,
+    "task_list_amount_credits": 0.24,
+    "usage_deducted_credits": 0.216
+  },
+  "scope_limit": "Single-image text generation and same-task lookup were run through AstrBot chat. Editing and other models were validated structurally but not generated. Official market installation remains open."
+}
