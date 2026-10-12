@@ -2,7 +2,7 @@
 
 Generate or edit one Flux image in an AstrBot conversation through your own Ace Data Cloud account. `flux_generate_image` submits a job, and `flux_get_task` retrieves that same task until its final image is ready.
 
-[简体中文指南](readme/README_zh_Hans.md) · [Flux Images API](https://platform.acedata.cloud/documents/flux-images) · [Flux Tasks API](https://platform.acedata.cloud/documents/flux-tasks) · [Current prices](https://platform.acedata.cloud/services/flux)
+[简体中文指南](readme/README_zh_Hans.md) · [Flux Images API](https://platform.acedata.cloud/documents/flux-images?utm_source=opensource&utm_medium=referral&utm_campaign=evergreen&utm_content=fluxastrbot_readme_documents_flux_images) · [Flux Tasks API](https://platform.acedata.cloud/documents/flux-tasks?utm_source=opensource&utm_medium=referral&utm_campaign=evergreen&utm_content=fluxastrbot_readme_documents_flux_tasks) · [Current prices](https://platform.acedata.cloud/services/flux?utm_source=opensource&utm_medium=referral&utm_campaign=evergreen&utm_content=fluxastrbot_readme_services_flux)
 
 ## Find and install
 
@@ -12,7 +12,9 @@ The official AstrBot Cloud listing is pending. After the source release is merge
 
 ## Configure your key
 
-In [Ace Data Cloud Applications](https://platform.acedata.cloud/console/applications), copy a generation API key from your General application or create a key that permits both `/flux/images` and `/flux/tasks`. Check the current price and balance before submitting. Paste the key into the plugin's **Ace Data Cloud generation API key with Flux access** setting. Do not add `Bearer ` or use a `platform-...` management token. AstrBot masks the field in WebUI but stores the original value in its data directory, which should be protected.
+New account? Register and sign in first. If the Applications page has no General application yet, choose **Initialize General Application**, then continue with the key steps below.
+
+In [Ace Data Cloud Applications](https://platform.acedata.cloud/console/applications?utm_source=opensource&utm_medium=referral&utm_campaign=evergreen&utm_content=fluxastrbot_readme_api_key), copy a generation API key from your General application or create a key that permits both `/flux/images` and `/flux/tasks`. Check the current price and balance before submitting. Paste the key into the plugin's **Ace Data Cloud generation API key with Flux access** setting. Do not add `Bearer ` or use a `platform-...` management token. AstrBot masks the field in WebUI but stores the original value in its data directory, which should be protected.
 
 Select a chat model that supports tool calling. Allow both Flux tools in the conversation's profile and persona.
 
