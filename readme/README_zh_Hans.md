@@ -2,7 +2,7 @@
 
 通过您自己的 Ace Data Cloud 账号，在 AstrBot 对话中生成或编辑一张 Flux 图片。`flux_generate_image` 提交一次任务，`flux_get_task` 用同一个任务 ID 查询最终结果。
 
-[English guide](../README.md) · [Flux 图片接口](https://platform.acedata.cloud/documents/flux-images) · [Flux 任务接口](https://platform.acedata.cloud/documents/flux-tasks) · [当前价格](https://platform.acedata.cloud/services/flux)
+[English guide](../README.md) · [Flux 图片接口](https://platform.acedata.cloud/documents/flux-images?utm_source=opensource&utm_medium=referral&utm_campaign=evergreen&utm_content=fluxastrbot_readme_documents_flux_images) · [Flux 任务接口](https://platform.acedata.cloud/documents/flux-tasks?utm_source=opensource&utm_medium=referral&utm_campaign=evergreen&utm_content=fluxastrbot_readme_documents_flux_tasks) · [当前价格](https://platform.acedata.cloud/services/flux?utm_source=opensource&utm_medium=referral&utm_campaign=evergreen&utm_content=fluxastrbot_readme_services_flux)
 
 ## 查找与安装
 
@@ -12,7 +12,9 @@
 
 ## 配置密钥
 
-在 [Ace Data Cloud 应用管理](https://platform.acedata.cloud/console/applications)复制生成 API Key，或创建同时允许 `/flux/images` 与 `/flux/tasks` 的 Key。提交前查看当前模型价格和余额。将 Key 填入插件的 **Ace Data Cloud generation API key with Flux access** 配置项，不要添加 `Bearer `，也不要使用 `platform-...` 管理令牌。AstrBot WebUI 会遮蔽显示此字段，但原值保存在数据目录中，请保护该目录。
+首次使用请先注册并登录；如果应用页还没有通用应用，点击 **初始化通用应用（Initialize General Application）**，再按下面步骤管理密钥。
+
+在 [Ace Data Cloud 应用管理](https://platform.acedata.cloud/console/applications?utm_source=opensource&utm_medium=referral&utm_campaign=evergreen&utm_content=fluxastrbot_readme_api_key)复制生成 API Key，或创建同时允许 `/flux/images` 与 `/flux/tasks` 的 Key。提交前查看当前模型价格和余额。将 Key 填入插件的 **Ace Data Cloud generation API key with Flux access** 配置项，不要添加 `Bearer `，也不要使用 `platform-...` 管理令牌。AstrBot WebUI 会遮蔽显示此字段，但原值保存在数据目录中，请保护该目录。
 
 选择支持工具调用的对话模型，并在当前对话的 profile 与 persona 中允许两个 Flux 工具。
 
